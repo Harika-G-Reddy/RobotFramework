@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231118 09:56:06.965" rpa="false" schemaversion="4">
+<suite id="s1" name="Sample" source="C:\Users\DELL\PycharmProjects\Robottt\sample">
+<suite id="s1-s1" name="Register" source="C:\Users\DELL\PycharmProjects\Robottt\sample\Register.robot">
+<test id="s1-s1-t1" name="Verify user is able to Register using keboard actions" line="39">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://demo.automationtesting.in/Register.html</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231118 09:56:07.410" level="INFO">Opening browser 'chrome' to base url 'https://demo.automationtesting.in/Register.html'.</msg>
+<status status="PASS" starttime="20231118 09:56:07.409" endtime="20231118 09:56:13.015"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231118 09:56:16.018" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231118 09:56:13.017" endtime="20231118 09:56:16.018"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="basicBootstrapForm"]/div[1]/div[1]/input</arg>
+<arg>HR</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231118 09:56:16.022" level="INFO">Typing text 'HR' into text field 'xpath://*[@id="basicBootstrapForm"]/div[1]/div[1]/input'.</msg>
+<status status="PASS" starttime="20231118 09:56:16.020" endtime="20231118 09:56:17.150"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>xpath://*[@id="basicBootstrapForm"]/div[1]/div[2]/input</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20231118 09:56:17.167" level="INFO">Sending key(s) ('TAB',) to xpath://*[@id="basicBootstrapForm"]/div[1]/div[2]/input element.</msg>
+<msg timestamp="20231118 09:56:18.053" level="INFO">Pressing special key TAB to element.</msg>
+<msg timestamp="20231118 09:56:18.053" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231118 09:56:17.165" endtime="20231118 09:56:18.084"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://*[@id="basicBootstrapForm"]/div[1]/div[2]/input</arg>
+<arg>sam</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231118 09:56:18.092" level="INFO">Typing text 'sam' into text field 'xpath://*[@id="basicBootstrapForm"]/div[1]/div[2]/input'.</msg>
+<status status="PASS" starttime="20231118 09:56:18.090" endtime="20231118 09:56:18.312"/>
+</kw>
+<tag>keyss</tag>
+<status status="PASS" starttime="20231118 09:56:07.405" endtime="20231118 09:56:18.313"/>
+</test>
+<status status="PASS" starttime="20231118 09:56:06.996" endtime="20231118 09:56:18.314"/>
+</suite>
+<status status="PASS" starttime="20231118 09:56:06.967" endtime="20231118 09:56:18.317"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">keyss</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Sample">Sample</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Register">Sample.Register</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

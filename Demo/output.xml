@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231118 09:49:01.333" rpa="false" schemaversion="4">
+<suite id="s1" name="Demo" source="C:\Users\DELL\PycharmProjects\Robottt\Demo">
+<suite id="s1-s1" name="TC10" source="C:\Users\DELL\PycharmProjects\Robottt\Demo\TC10.robot">
+<test id="s1-s1-t1" name="check the mouse functionality" line="15">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://jqueryui.com/droppable/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231118 09:49:01.818" level="INFO">Opening browser 'chrome' to base url 'https://jqueryui.com/droppable/'.</msg>
+<status status="PASS" starttime="20231118 09:49:01.818" endtime="20231118 09:49:07.920"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231118 09:49:07.955" endtime="20231118 09:49:10.231"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>xpath://*[@id="menu-top"]/li[2]/a</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20231118 09:49:10.267" level="INFO">Simulating Mouse Over on element 'xpath://*[@id="menu-top"]/li[2]/a'.</msg>
+<status status="PASS" starttime="20231118 09:49:10.260" endtime="20231118 09:49:10.594"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231118 09:49:13.597" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231118 09:49:10.597" endtime="20231118 09:49:13.597"/>
+</kw>
+<kw name="Open Context Menu" library="SeleniumLibrary">
+<arg>xpath://*[@id="menu-top"]/li[8]/a</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20231118 09:49:13.599" endtime="20231118 09:49:13.961"/>
+</kw>
+<for>
+<var>${a} IN @{fruitnames}</var>
+<iter>
+<var name="${a} IN @{fruitnames}"/>
+<kw name="Log" library="BuiltIn">
+<arg>${a}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20231118 09:49:13.962" endtime="20231118 09:49:13.962"/>
+</kw>
+<status status="NOT RUN" starttime="20231118 09:49:13.962" endtime="20231118 09:49:13.962"/>
+</iter>
+<msg timestamp="20231118 09:49:13.963" level="FAIL">FOR loop has no 'IN' or other valid separator.</msg>
+<status status="FAIL" starttime="20231118 09:49:13.962" endtime="20231118 09:49:13.963"/>
+</for>
+<tag>abd</tag>
+<status status="FAIL" starttime="20231118 09:49:01.817" endtime="20231118 09:49:13.964">FOR loop has no 'IN' or other valid separator.</status>
+</test>
+<status status="FAIL" starttime="20231118 09:49:01.387" endtime="20231118 09:49:13.966"/>
+</suite>
+<status status="FAIL" starttime="20231118 09:49:01.340" endtime="20231118 09:49:13.969"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">abd</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Demo">Demo</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="TC10">Demo.TC10</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231118 09:49:01.388" level="ERROR">Error in file 'C:\Users\DELL\PycharmProjects\Robottt\Demo\TC10.robot' on line 5: Setting variable '' failed: Invalid variable name ''.</msg>
+</errors>
+</robot>

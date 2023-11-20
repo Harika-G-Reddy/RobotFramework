@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231118 09:17:52.201" rpa="false" schemaversion="4">
+<suite id="s1" name="Demo" source="C:\Users\DELL\PycharmProjects\Robottt\Demo">
+<suite id="s1-s1" name="TC8" source="C:\Users\DELL\PycharmProjects\Robottt\Demo\TC8.robot">
+<test id="s1-s1-t1" name="check the login functionality" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://demo.automationtesting.in/Frames.html</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231118 09:17:52.630" level="INFO">Opening browser 'chrome' to base url 'https://demo.automationtesting.in/Frames.html'.</msg>
+<status status="PASS" starttime="20231118 09:17:52.630" endtime="20231118 09:18:02.451"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231118 09:18:02.451" endtime="20231118 09:18:02.920"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>id:singleframe</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20231118 09:18:02.922" level="INFO">Selecting frame 'id:singleframe'.</msg>
+<status status="PASS" starttime="20231118 09:18:02.921" endtime="20231118 09:18:03.010"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath:/html/body/section/div/div/div/input</arg>
+<arg>bheem</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231118 09:18:03.011" level="INFO">Typing text 'bheem' into text field 'xpath:/html/body/section/div/div/div/input'.</msg>
+<status status="PASS" starttime="20231118 09:18:03.011" endtime="20231118 09:18:04.297"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20231118 09:18:04.299" endtime="20231118 09:18:04.304"/>
+</kw>
+<tag>regression</tag>
+<status status="PASS" starttime="20231118 09:17:52.629" endtime="20231118 09:18:04.305"/>
+</test>
+<status status="PASS" starttime="20231118 09:17:52.240" endtime="20231118 09:18:04.337"/>
+</suite>
+<suite id="s1-s2" name="TC9" source="C:\Users\DELL\PycharmProjects\Robottt\Demo\TC9.robot">
+<test id="s1-s2-t1" name="check the swtich tabs functionality" line="14">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://demo.automationtesting.in/Windows.html</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231118 09:18:04.420" level="INFO">Opening browser 'chrome' to base url 'https://demo.automationtesting.in/Windows.html'.</msg>
+<status status="PASS" starttime="20231118 09:18:04.419" endtime="20231118 09:18:15.178"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231118 09:18:15.183" endtime="20231118 09:18:15.561"/>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${win_handles}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20231118 09:18:15.623" level="INFO">${win_handles} = ['D0DD394BA36737AB25C4CF918C8A3639']</msg>
+<status status="PASS" starttime="20231118 09:18:15.576" endtime="20231118 09:18:15.623"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="Tabbed"]/a/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231118 09:18:15.628" level="INFO">Clicking element 'xpath://*[@id="Tabbed"]/a/button'.</msg>
+<status status="PASS" starttime="20231118 09:18:15.627" endtime="20231118 09:18:15.807"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${win_handles}[0]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20231118 09:18:15.808" endtime="20231118 09:18:16.680"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>title=Frames &amp; windows</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20231118 09:18:16.732" endtime="20231118 09:18:16.971"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231118 09:18:19.973" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231118 09:18:16.972" endtime="20231118 09:18:19.973"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>title=Selenium</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20231118 09:18:19.973" endtime="20231118 09:18:20.111"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231118 09:18:25.112" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231118 09:18:20.112" endtime="20231118 09:18:25.112"/>
+</kw>
+<tag>regression</tag>
+<status status="PASS" starttime="20231118 09:18:04.415" endtime="20231118 09:18:25.113"/>
+</test>
+<status status="PASS" starttime="20231118 09:18:04.391" endtime="20231118 09:18:25.114"/>
+</suite>
+<status status="PASS" starttime="20231118 09:17:52.203" endtime="20231118 09:18:25.116"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0" skip="0">regression</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Demo">Demo</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="TC8">Demo.TC8</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="TC9">Demo.TC9</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
